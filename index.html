@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skycast</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    
+    <!-- navigation var -->
+
+    <div class="nav">
+      <form id="form">
+        <input
+          type="search"
+          role="searchbox"
+          spellcheck="true"
+          name="search"
+          id="input"
+          placeholder="Enter your city"
+        />
+        <button type="submit" class="items" id="btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button type="button" class="items" id="toggle">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </form>
+    </div>
+
+    <!-- main-body content -->
+
+    <div id="main-container">
+      <!-- box-1 -->
+      <div class="box" id="box1">
+        <div class="center">
+          <h3 id="h3" title="temperature"></h3>
+          &deg;C
+        </div>
+        <div id="temp"><img src="" alt="Loading..." id="img" /></div>
+      </div>
+      <!-- box-2 -->
+
+      <div class="box" id="box2">
+        <h3 id="city" class="center" title="city">city</h3>
+        <h3 id="country" class="center" title="country">country</h3>
+      </div>
+      <!-- box-3 -->
+
+      <div class="box" id="box3">
+        <span id="uv" class="center" title="uv-range">range</span>
+        <span class="IMG-ICON"
+          ><img src="uv-index.svg" alt="" id="uvImg" />
+        </span>
+      </div>
+      <!-- box-4 -->
+
+      <div class="box" id="box4">
+        <h3 id="cloud" class="center" title="cloud percentage">--%</h3>
+        <span class="IMG-ICON"><i class="fa-solid fa-cloud"></i></span>
+      </div>
+
+      <!-- box-5 -->
+
+      <div class="box" id="box5">
+        <h3 id="wind" class="center" title="wind kph">--kph</h3>
+        <span class="IMG-ICON"><i class="fa-solid fa-wind"></i></span>
+      </div>
+
+      <div class="box" id="box6">
+        <h3 id="humidity" class="center" title="humidity">--%</h3>
+        <span class="IMG-ICON"
+          ><i class="fa-solid fa-droplet"></i> Humidity</span
+        >
+      </div>
+      <!-- box-6 -->
+
+      <div class="box" id="box7">
+        <h3 id="preC" class="center" title="rain chance">--%</h3>
+        <span class="IMG-ICON"><i class="fa-solid fa-cloud-rain"></i></span>
+      </div>
+      <!-- box-7 -->
+    </div>
+
+    <!-- footer -->
+
+    <div class="foot"><h4 id="footer">&copy;2026 with Akash solanki</h4></div>
+
+    <!-- end-of-footer -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
